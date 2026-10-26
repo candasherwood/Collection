@@ -1,0 +1,2 @@
+# jadeli desktop window (uses the WebView2 runtime already present on Windows 10/11)
+pywebview>=6.0

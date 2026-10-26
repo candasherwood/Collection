@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark light" />
+    <title>JADELY News</title>
+    <link rel="stylesheet" href="/jadely.css" />
+  </head>
+  <body style="--accent: #c05f7a; --accent-ink: #1b0710">
+    <div class="shell">
+      <header class="topbar">
+        <div class="brand"><span class="brand-mark">J</span>JADELY<span class="brand-sub">news</span></div>
+        <nav class="nav">
+          <a href="/launcher"><span class="dot"></span>Launcher</a>
+          <a href="/store"><span class="dot"></span>Store</a>
+          <a href="/news" class="active"><span class="dot"></span>News</a>
+          <a href="/"><span class="dot"></span>Notes</a>
+        </nav>
+        <div class="search" style="margin-left:auto;max-width:300px">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="6" /><path d="m20 20-4.5-4.5" />
+          </svg>
+          <input id="q" type="search" placeholder="Find a segment…" autocomplete="off" />
+        </div>
+        <div class="topbar-right">
+          <button class="btn small ghost" id="btn-hidden" title="Shelves marked hidden">Hidden shelves</button>
+          <button class="btn small ghost" data-theme-toggle title="Light or dark">Theme</button>
+        </div>
+      </header>
+
+      <div class="split">
+        <aside class="rail" id="rail"></aside>
+        <main class="main">
+          <div id="program"></div>
+        </main>
+        <aside class="panel" id="transcript"></aside>
+      </div>
+    </div>
+
+    <div id="player-mount"></div>
+    <div id="modals"></div>
+
+    <script src="/markdown.js"></script>
+    <script src="/jadely.js"></script>
+    <script src="/news.js"></script>
+  </body>
+</html>

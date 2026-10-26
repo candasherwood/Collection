@@ -1,0 +1,148 @@
+{
+  "books": [
+    {
+      "id": "lanternsample",
+      "title": "The Lantern's Edge",
+      "description": "A keeper's granddaughter lights the last dark tower on the edge of a broken ring, and every power on the coast comes to put it out. Nautical fantasy with knights, pirates, and a light that costs memory.",
+      "target_words": 120000,
+      "chapters": [
+        {
+          "path": "The Lantern's Edge/01 - Chapter One.md",
+          "synopsis": "Mira climbs the tower that has been dark exactly as long as she has been alive."
+        },
+        {
+          "path": "The Lantern's Edge/02 - Chapter Two.md",
+          "synopsis": "One hundred and twelve steps. The lamp room is not abandoned; the sea goes quiet."
+        },
+        {
+          "path": "The Lantern's Edge/03 - Chapter Three.md",
+          "synopsis": "The keeper's vow, said badly before the fifth match. She lights it; the sea fills with ships that are not there; a soaked stranger tells her to put it out."
+        },
+        {
+          "path": "The Lantern's Edge/04 - Chapter Four.md",
+          "synopsis": "Isolde Sable makes her offer, the Crown's Vigil arrives, and a knight knocks at the door."
+        },
+        {
+          "path": "The Lantern's Edge/05 - Chapter Five.md",
+          "synopsis": "The dousing. The first Holding. Eight feet of light, and the price is her grandmother's face. On deck, Isolde tells her what a hanged captain said."
+        },
+        {
+          "path": "The Lantern's Edge/06 - Chapter Six.md",
+          "synopsis": "First day aboard the Mercy Bell: the crew, the rules, and a knife and a biscuit at dusk. He chooses her out loud; she writes 'He stays' in the notebook. Then a knight rows after them."
+        },
+        {
+          "path": "The Lantern's Edge/07 - Chapter Seven.md",
+          "synopsis": "The Quiet: no wind, no sound, and two dead fleets to steer through. Rook in the dark of the hold explains what a poor knight owns. Isolde names her price: stand before the Brine Mother and say no. Then a light where the Eighth should be dark."
+        },
+        {
+          "path": "The Lantern's Edge/08 - Chapter Eight.md",
+          "synopsis": "Wren's Fold: a tidy village of Hollowed family at their posts, and Alys Wren in the lamp room, burning her own will and her children's names to keep the Eighth lit. The order's Glass Roll says 'deferred'. Marrow finds a lamp housing on the bottom."
+        },
+        {
+          "path": "The Lantern's Edge/09 - Chapter Nine.md",
+          "synopsis": "The Brine Mother's agent reads the contract on the quay: any lit lantern will settle the debt, including a keeper with no wick left. Isolde's arithmetic versus Mira's refusal. Then Corbin Sallow, the Understudy, arrives paid twice, and meets the man he left behind."
+        },
+        {
+          "path": "The Lantern's Edge/10 - Chapter Ten.md",
+          "synopsis": "The middle watch: Sallow doesn't sleep, Rook sings badly, and a loose hatch nearly takes Pell. Mira holds it blind from thirty feet away — the first rung of the ladder — and the price is her grandmother's voice."
+        },
+        {
+          "path": "The Lantern's Edge/11 - Chapter Eleven.md",
+          "synopsis": "They turn back for Wren's Fold and find a Crown cutter already there. Ossian Vey, licensed keeper, offers Alys a warm room and a form; she refuses. Her last flare shows the Ash twenty days out. She dies at the turn of the tide and leaves Mira a coal of light with no wick — and Vey leaves knowing names nobody told him."
+        },
+        {
+          "path": "The Lantern's Edge/12 - Chapter Twelve.md",
+          "synopsis": "Cornered at the Gull's Teeth with the crown's boats coming over the rails, Mira spends Alys's coal on a sound: the toll, a Holding shaped as a note, sung by the whole crew. The fleet stops. Vey hears his own voice from the year the Fifth went dark, and his ring cracks. The price is the winter she was twelve."
+        },
+        {
+          "path": "The Lantern's Edge/13 - Chapter Thirteen.md",
+          "synopsis": "Aboard the Vigil under truce: beeswax, white gloves and a chart with nine brass pins. Voss wants the eight dark lanterns relit inside eleven days, under licence. Mira refuses the chair. Then Voss shows her the scarred hand and the brother in the room with the chessboard, and asks the question she cannot answer."
+        },
+        {
+          "path": "The Lantern's Edge/14 - Chapter Fourteen.md",
+          "synopsis": "A squall takes the mainsail and nearly takes Pell; Rook brings him down and pays for it with his shoulder. That night, in the hold, Rook says a new vow with Mira for a witness — three questions, answered differently — and does it badly. The short way west is the Drowned Road, and the road needs a lens."
+        },
+        {
+          "path": "The Lantern's Edge/15 - Chapter Fifteen.md",
+          "synopsis": "Candlewick: the Fourth's great lens hangs over a tavern bar with candles in it. Orren Beck was its keeper, and the light took his son out of his memory the night he held the boy up out of the harbour. He wants proof the light matters. Mira gives him a lit road and the drowned quay, and pays with the smell of her own kitchen."
+        },
+        {
+          "path": "The Lantern's Edge/16 - Chapter Sixteen.md",
+          "synopsis": "A lens with no tower will not point, so they build it a canvas chimney, and the drowned road comes up out of the sea with thirteen ships on it. When the lens tips, Teo holds it — no ring, no cost he can feel, which is what the third column of the Glass Roll is for. Then he says a small kind lie into the light, and it goes out, and takes his sight with it."
+        },
+        {
+          "path": "The Lantern's Edge/17 - Chapter Seventeen.md",
+          "synopsis": "Sixty miles of drowned road in an open boat, twenty feet at a time: the chipped lens throws the road twice, and the copy is the beautiful one. Teo has been blind since Candlewick and navigating by the sound of a wall, and tells her in a chapel at dawn. Mira pays with the smell of a lamp — and tells him her first fluent lie."
+        },
+        {
+          "path": "The Lantern's Edge/18 - Chapter Eighteen.md",
+          "synopsis": "Taken up at Barrowfoot onto the Vigil: the lens impounded, a licence and a warrant on the same table, and an admiral's Hollowed brother who beats her at chess every night and cannot ask a question. Vey's duplicate Roll has Teo listed as recovered, in a hand nobody can account for. At dusk the lens shows the town full of holes shaped like people, and the holes turn to look at the light."
+        },
+        {
+          "path": "The Lantern's Edge/19 - Chapter Nineteen.md",
+          "synopsis": "The Hollow Bell rings once every six seconds and fifty-two Hollowed walk the drowned road to the lit window, climb the chains and go to work. Rook's blade will not light, Mira holds the cockpit hatch for a count of a hundred and eighty and loses the Circlet rhyme, Sallow's six-salt reports come out at his desk, and Konrad Voss stands up for the first time in eleven years."
+        },
+        {
+          "path": "The Lantern's Edge/20 - Chapter Twenty.md",
+          "synopsis": "Mira turns the boat around and walks the road home. Ede Calloway is alive on the sea-wall at Carrow, holding a ring round the whole island with no light in it, paying a season a year, writing her granddaughter's name every morning without knowing whose it is. The notebook says who told her to put the Ninth out."
+        },
+        {
+          "path": "The Lantern's Edge/21 - Chapter Twenty-One.md",
+          "synopsis": "First light at Carrow, then the lamp room kept ready for eleven years and read out loud: a hundred and forty names, the family next door, and Tess Calloway four hundred times. Sallow says what the Ash is really following. Mira takes the light north as bait and spends her mother's name to buy a ship's anchor."
+        },
+        {
+          "path": "The Lantern's Edge/22 - Chapter Twenty-Two.md",
+          "synopsis": "The road goes under the Kindling and up a stair into a fortress where a hundred knights swear they guide nothing and eleven people in a cellar guide everything. The Warden gives Mira the arithmetic and asks her to stop being seen. Rook learns what his order's first vow was, and Mira takes a green band that shows her a road nobody can follow but you."
+        },
+        {
+          "path": "The Lantern's Edge/23 - Chapter Twenty-Three.md",
+          "synopsis": "The Crown's receipt for the dark is four lines long and the term ends on the ninth night of the ninth month. Under the fortress, a grey stone in a wheel has been cutting Embers out of a dead sun, and the Seneschal's ledger shows what the order was paid to keep dark. The Mercy Bell comes in past the Ash untouched, and eleven drowned sailors put on green bands and see the road go down past the shelf where no living guide can follow."
+        },
+        {
+          "path": "The Lantern's Edge/24 - Chapter Twenty-Four.md",
+          "synopsis": "Thursday, on the tide: Admiral Voss lands nine sail with a writ that names the forge, three Embers in a case, and an examination under the Glass Roll. She offers a chair; she admits she signed the stipend herself. Teo, sent away with the light, comes back with a lane lit across a Crown anchorage and says the true thing to a third party — and pays for it with the shape of his harbour, while the Ninth's Ember goes into a strongroom marked unassessed."
+        },
+        {
+          "path": "The Lantern's Edge/25 - Chapter Twenty-Five.md",
+          "synopsis": "Isolde sells the Mercy Bell to the Crown for the Ember and finds her crew goes with the ship. Then a black hull with three red lights comes in on the first wind in five days, and the Ash runs from it: the Scarlet Assize, who quench their blades in seasons taken and hold that a coast kept soft will be eaten by what is coming over the Fall. An ordinator with a list cuts the nine-slot door in one pass, empties a lieutenant in a gate to teach the lesson, leaves a red blade burning in the stair — and leaves his novice behind, with a teal blade that has never lit."
+        },
+        {
+          "path": "The Lantern's Edge/26 - Chapter Twenty-Six.md",
+          "synopsis": "The red blade in the stair takes the morning off a guide in twenty steps and shuts the deep road. Only given light can put out taken light, and the only knight who has it cannot be ordered to use it. In the annals there is one precedent and a dead man's warning; at dusk Rook answers the one question he can still answer and the red lets go of nineteen years through him. What he loses is not a season but the vows, and the sword never lights again."
+        },
+        {
+          "path": "The Lantern's Edge/27 - Chapter Twenty-Seven.md",
+          "synopsis": "The Ash is not coming for the coast — it is going to the Fall, and every Hollowed and un-ship with it. A yellow watch band shows nine hundred empty people walking south; a council sets out the four colours of band and the guides' vow with the line the Crown struck out; and Mira proposes nine lights at the foot of the Fall, all lit and all seen — nine keepers, nine seasons in one night, and the coast dark for the first time in eleven years. The free crews answer Isolde's summons, the captains' vote is lost nine to fourteen abstentions, and then Mira says the old vow to twenty-three sail — getting answer for right at last, and promising them nothing but a count. Twenty-two of twenty-three put their hands up, and the guides take their sleeves up on the quay."
+        },
+        {
+          "path": "The Lantern's Edge/28 - Chapter Twenty-Eight.md",
+          "synopsis": "Four cutters come back with keepers and one brings a refusal; four nights of practice on the water end with seven holders and a horseshoe of nine miles, both ends on rock. The guides take twenty-two sail through the dark water all night, and the fleet comes to the Bowl at the foot of the Fall to find nine un-ships, nine hundred Hollowed on the shingle, and the Brine Mother's clerk with a book: nine seasons out of nine keepers by the turn of the tide, or a collection in people, one at a time. At four it begins, and the Ash comes ashore."
+        },
+        {
+          "path": "The Lantern's Edge/29 - Chapter Twenty-Nine.md",
+          "synopsis": "Seven boats on nine miles of lip, guides standing in the shallows behind each keeper, and a boy with a teal blade in the empty north housing. A clerk counts the collection out loud to eleven, and one of the eleven is the Admiral's brother. At seven the ring goes up, the sea goes flat, and the road comes up black and dry and goes over the edge of the world; the crews row inside it all night and eleven hulls sing a tide-bell wrong. Eight seasons come out of seven people — the joining-up of the vow, a daughter's name, a pub, a dock, a ship's name, and the keeper of the Fifth's ability to read what he writes — and the ninth coin is a light that was given: a sword that goes up instead of out. The Fall goes quiet, and eight hundred and eighty empty people stop walking in the rain."
+        },
+        {
+          "path": "The Lantern's Edge/30 - Chapter Thirty.md",
+          "synopsis": "Dawn on the tenth: the Crown's term died at midnight and there is no authority on the Reach. The Scarlet Assize stands off the bay, dips its three lights and goes. Voss says the true thing in front of the one witness she wronged, gives the fleet away, and sails north to clean her brother's lamp room. Eight hundred and eighty people who cannot be spoken to are walked home behind a lit window, house by house, on a name said in a doorway — and a father who lost his son to the light comes back to a pub he cannot remember, where his son reads the page out loud every morning. Isolde gets her ship and her ship's name back; Mira and Teo say a verse badly in the dark and keep a counter-vow. At Carrow, Mira climbs a hundred and twelve steps, cannot say the vow, says seven words out of the middle of it, and lights the Ninth for nothing at all. Then a season of lights lit by people who had each lost the thing they were best at, four lines from a Throne that will not apologise, and the last page of the notebook: the short form, the cost, the names, and her own name in her own hand."
+        }
+      ],
+      "folder": "The Lantern's Edge",
+      "created_at": "2026-10-25T07:00:00"
+    },
+    {
+      "id": "bc53c5bb61a4",
+      "title": "The Lantern's Edge II",
+      "description": "",
+      "target_words": 50000,
+      "chapters": [
+        {
+          "path": "Books/The Lantern's Edge II/01 - Chapter One.md",
+          "synopsis": "A year and a half on: the light costs Mira nothing, the coast keeps four of nine, and one of the Hollowed in Carrow square sings a verse nobody wrote - then gives the count as twelve."
+        }
+      ],
+      "folder": "Books/The Lantern's Edge II",
+      "created_at": "2026-10-25T22:32:26"
+    }
+  ]
+}

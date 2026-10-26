@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark light" />
+    <title>jadeli</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="titlebar">
+        <div class="titlebar-left">
+          <button class="icon-btn" id="btn-sidebar" title="Toggle sidebar (Ctrl+\)">
+            <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2" /><path d="M9 4v16" /></svg>
+          </button>
+          <div class="brand"><span class="brand-mark">j</span><span class="brand-name">jadeli</span></div>
+        </div>
+
+        <button class="vault-chip" id="vault-chip" title="Switch vault folder">
+          <svg viewBox="0 0 24 24"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" /></svg>
+          <span id="vault-name">vault</span>
+        </button>
+
+        <div class="titlebar-right">
+          <button class="icon-btn" id="btn-split" title="Split panes (Ctrl+Shift+\)">
+            <svg viewBox="0 0 24 24"><rect x="3" y="5" width="7.5" height="14" rx="1.5" /><rect x="13.5" y="5" width="7.5" height="14" rx="1.5" /></svg>
+          </button>
+          <button class="icon-btn" id="btn-quick" title="Quick switch (Ctrl+O)">
+            <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6" /><path d="m20 20-4.5-4.5" /></svg>
+          </button>
+          <button class="icon-btn" id="btn-new-note" title="New note (Ctrl+N)">
+            <svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" /></svg>
+          </button>
+          <button class="icon-btn" id="btn-theme" title="Toggle light / dark">
+            <svg viewBox="0 0 24 24"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z" /></svg>
+          </button>
+        </div>
+      </header>
+
+      <div class="workspace">
+        <aside class="sidebar" id="sidebar">
+          <nav class="rail">
+            <button class="rail-btn is-active" data-tab="files" title="Files">
+              <svg viewBox="0 0 24 24"><path d="M6 3h7l5 5v13H6z" /><path d="M13 3v5h5" /></svg>
+            </button>
+            <button class="rail-btn" data-tab="search" title="Search (Ctrl+Shift+F)">
+              <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6" /><path d="m20 20-4.5-4.5" /></svg>
+            </button>
+            <button class="rail-btn" data-tab="books" title="Books">
+              <svg viewBox="0 0 24 24"><path d="M4 5a2 2 0 0 1 2-2h5v18H6a2 2 0 0 1-2-2z" /><path d="M13 3h5a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-5z" /></svg>
+            </button>
+            <button class="rail-btn" data-tab="tags" title="Tags">
+              <svg viewBox="0 0 24 24"><path d="M4 12V5a1 1 0 0 1 1-1h7l8 8-8 8z" /><circle cx="8.5" cy="8.5" r="1.2" /></svg>
+            </button>
+            <button class="rail-btn" data-tab="graph" title="Graph view">
+              <svg viewBox="0 0 24 24"><circle cx="6" cy="7" r="2.4" /><circle cx="18" cy="6" r="2.4" /><circle cx="13" cy="17" r="2.4" /><path d="M8 8.5 16 6.5M7.5 9l4 6M16.5 8l-2.6 6.8" /></svg>
+            </button>
+          </nav>
+
+          <div class="sidebar-panes">
+            <section class="pane is-active" data-pane="files">
+              <div class="pane-header">
+                <span>Files</span>
+                <div class="pane-actions">
+                  <button class="icon-btn sm" id="btn-new-note-2" title="New note">
+                    <svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" /></svg>
+                  </button>
+                  <button class="icon-btn sm" id="btn-new-folder" title="New folder">
+                    <svg viewBox="0 0 24 24"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" /><path d="M12 11v5M9.5 13.5h5" /></svg>
+                  </button>
+                </div>
+              </div>
+              <div class="file-tree" id="file-tree"></div>
+            </section>
+
+            <section class="pane" data-pane="search">
+              <div class="pane-header"><span>Search</span></div>
+              <input class="search-input" id="search-input" placeholder="Search notes and text…" autocomplete="off" />
+              <div class="search-results" id="search-results">
+                <p class="muted small pad">Type to search across every note in the vault.</p>
+              </div>
+            </section>
+
+            <section class="pane" data-pane="books">
+              <div class="pane-header">
+                <span>Books</span>
+                <div class="pane-actions">
+                  <button class="icon-btn sm" id="btn-new-book" title="New book">
+                    <svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" /></svg>
+                  </button>
+                </div>
+              </div>
+              <div class="book-list" id="book-list"></div>
+            </section>
+
+            <section class="pane" data-pane="tags">
+              <div class="pane-header"><span>Tags</span></div>
+              <div class="tag-list" id="tag-list"></div>
+            </section>
+          </div>
+        </aside>
+
+        <main class="main">
+          <section class="doc-view" id="doc-view" hidden>
+            <div class="panes">
+              <section class="doc-pane is-focused" data-pane="0">
+                <div class="tabs"></div>
+                <div class="doc-bar">
+                  <div class="breadcrumb"></div>
+                  <div class="doc-actions">
+                    <div class="segmented" data-role="view-toggle">
+                      <button data-view="edit" title="Write only (Ctrl+E)">Write</button>
+                      <button data-view="split" title="Split view (Ctrl+E)">Split</button>
+                      <button data-view="read" title="Reading view (Ctrl+E)">Read</button>
+                    </div>
+                    <button class="icon-btn sm" data-role="open-other" title="Open this note in the second pane">
+                      <svg viewBox="0 0 24 24"><path d="M4 5h6v14H4z" /><path d="M13 12h6m-3-3 3 3-3 3" /></svg>
+                    </button>
+                    <button class="icon-btn sm" data-role="toggle-panel" title="Toggle outline / links panel">
+                      <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2" /><path d="M15 4v16" /></svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="doc-body mode-split">
+                  <textarea class="editor" spellcheck="false" placeholder="Start writing…"></textarea>
+                  <div class="preview"></div>
+                </div>
+                <div class="pane-empty" hidden>
+                  <div class="pane-empty-inner">
+                    <div class="pe-title">No note in this pane</div>
+                    <p class="muted small">Open any note here to keep it beside the other one — an outline while you draft, or two chapters side by side.</p>
+                    <div class="pe-actions">
+                      <button class="btn sm primary" data-role="pe-pick">Choose a note</button>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <section class="doc-pane" data-pane="1" hidden>
+                <div class="tabs"></div>
+                <div class="doc-bar">
+                  <div class="breadcrumb"></div>
+                  <div class="doc-actions">
+                    <div class="segmented" data-role="view-toggle">
+                      <button data-view="edit" title="Write only (Ctrl+E)">Write</button>
+                      <button data-view="split" title="Split view (Ctrl+E)">Split</button>
+                      <button data-view="read" title="Reading view (Ctrl+E)">Read</button>
+                    </div>
+                    <button class="icon-btn sm" data-role="open-other" title="Open this note in the first pane">
+                      <svg viewBox="0 0 24 24"><path d="M20 5h-6v14h6z" /><path d="M11 12H5m3-3-3 3 3 3" /></svg>
+                    </button>
+                    <button class="icon-btn sm" data-role="toggle-panel" title="Toggle outline / links panel">
+                      <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2" /><path d="M15 4v16" /></svg>
+                    </button>
+                    <button class="icon-btn sm" data-role="close-pane" title="Close this pane">
+                      <svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18" /></svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="doc-body mode-split">
+                  <textarea class="editor" spellcheck="false" placeholder="Start writing…"></textarea>
+                  <div class="preview"></div>
+                </div>
+                <div class="pane-empty" hidden>
+                  <div class="pane-empty-inner">
+                    <div class="pe-title">No note in this pane</div>
+                    <p class="muted small">Open any note here to keep it beside the other one — an outline while you draft, or two chapters side by side.</p>
+                    <div class="pe-actions">
+                      <button class="btn sm primary" data-role="pe-pick">Choose a note</button>
+                      <button class="btn sm ghost" data-role="pe-close">Close pane</button>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </section>
+
+          <section class="book-view" id="book-view" hidden></section>
+
+          <section class="graph-view" id="graph-view" hidden>
+            <canvas id="graph-canvas"></canvas>
+            <div class="graph-toolbar">
+              <span id="graph-stats" class="muted small"></span>
+              <button class="btn sm" id="btn-graph-refresh">Refresh</button>
+              <button class="btn sm" id="btn-graph-fit">Fit</button>
+            </div>
+          </section>
+
+          <section class="welcome" id="welcome-view">
+            <div class="welcome-inner">
+              <div class="welcome-logo">j</div>
+              <h1>jadeli</h1>
+              <p class="muted">Plain-file notes and books. Everything lives in your vault folder as markdown.</p>
+              <div class="welcome-actions">
+                <button class="btn primary" id="btn-welcome-new">New note</button>
+                <button class="btn" id="btn-welcome-book">Start a book</button>
+                <button class="btn" id="btn-welcome-search">Search vault</button>
+              </div>
+              <div class="welcome-hints">
+                <div><kbd>Ctrl</kbd>+<kbd>O</kbd><span>Quick switch</span></div>
+                <div><kbd>Ctrl</kbd>+<kbd>N</kbd><span>New note</span></div>
+                <div><kbd>Ctrl</kbd>+<kbd>E</kbd><span>Write / split / read</span></div>
+                <div><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>\</kbd><span>Split panes</span></div>
+                <div><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>F</kbd><span>Search</span></div>
+              </div>
+            </div>
+          </section>
+
+          <footer class="statusbar">
+            <span id="status-left">No note open</span>
+            <span id="status-right"></span>
+          </footer>
+        </main>
+
+        <aside class="right-panel" id="right-panel">
+          <div class="panel-tabs">
+            <button data-panel="outline" class="is-active">Outline</button>
+            <button data-panel="links">Links</button>
+          </div>
+          <div class="panel-body" id="panel-outline"></div>
+          <div class="panel-body" id="panel-links" hidden></div>
+        </aside>
+      </div>
+    </div>
+
+    <div class="modal-root" id="modal-root" hidden></div>
+    <div class="toast" id="toast" hidden></div>
+
+    <script src="/markdown.js"></script>
+    <script src="/graph.js"></script>
+    <script src="/app.js"></script>
+  </body>
+</html>

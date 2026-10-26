@@ -1,0 +1,23 @@
+# local runtime files — generated per machine, never shared
+config.json
+jadely.log
+jadely-dev.log
+.profile/
+__pycache__/
+*.pyc
+*.jadely-tmp
+build/
+
+# the app registry: which windows this machine has open
+state/
+
+# playback positions and trashed items: machine state, not content
+library/.jadely/state.json
+library/.jadely/trash/
+vault/.jadeli/trash/
+vault/Exports/
+
+# editors
+.vscode/
+.idea/
+Thumbs.db
